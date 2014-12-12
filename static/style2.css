@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+body{font-family:'Nimbus Sans L','Nimbus Sans', sans-serif;margin-right:auto;
+     margin-left:auto;color:#c1c1c1;font-size:90%;background-color:#202020;}
+a{color:#99AACC;}
+a:visited{color:#CC99CB;}
+a:hover{color:#86B89F;}
+
+h1{color:#86B89F;}
+h1, h2, h3, h4{font-family:serif;font-weight:400;}
+
+header h1{display:none;}
+header{text-align:center;padding-bottom:20px;}
+header nav ul li{list-style-type:none;display:inline;margin:10px;}
+
+article{margin-left:5%;width:36em;}
+article li{list-style-type:none;text-indent:-1em;}
+article li:before{content:"– ";}
+article h1{padding-bottom:20px;}
+article h2{counter-reset:subarticle;counter-increment:article;}
+article h2:before{content:counter(article)". ";}
+article h3{counter-increment:subarticle;}
+article h3:before{content:counter(article)"."counter(subarticle)". ";}
+article > p{text-indent:1em; line-height:1.4;}
+article blockquote {border-left:2px solid #2E2E2E;}
+article blockquote p{margin-left:20px;}
+article pre{border-left:1px solid #434343;padding-left:10px;margin-left:1em;}
+
+#posts {margin-left:5%;width:42em;}
+#posts li a{color:#99AACC;}
+#posts li a:hover{color:#CC99CB;}
+#posts time{color:#86B89F;font-style:italic;}
+#posts li{list-style-type:none;line-height:1.8;}
+#posts li time{margin-right:20px;}
+
+footer{margin-top:100px;text-align:center;}
+footer p{font-style:italic;font-size:10px;margin:11px;}
